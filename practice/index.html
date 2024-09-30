@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+   
+    <button onclick="
+        console.log(amount);
+        document.getElementById(`result`).innerHTML = 'amount'
+        " > show cart </button> 
+
+    <button onclick="
+    amount = amount + 1;
+    console.log(amount);
+    "  >add to cart </button>
+    <button onclick="
+        amount = amount + 2;
+        console.log(amount);
+    ">+2</button>
+    <button onclick="
+        amount = amount + 3;
+        console.log(amount);
+    ">+3</button>
+    <button onclick="
+        amount = 0 ;
+        console.log('jamakaporkoytakinsadekh:' + $(amount));
+    ">reset cart</button>
+
+    <h4 id="result"></h4>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
